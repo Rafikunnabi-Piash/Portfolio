@@ -3,46 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafikunnabi Piash</title>
+    <title>Rafikunnabi Piash | Frontend Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0a0a0a;
-            color: #e2e8f0;
-        }
-        .glass-effect {
-            background: rgba(17, 24, 39, 0.5);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .section-heading {
-            @apply text-3xl md:text-4xl font-extrabold mb-12 text-center text-white;
-        }
-        /* Added for smoother transitions on more elements */
-        nav a, .project-card, .skill-item, .cert-item, .social-icon, .education-card {
-            transition: all 0.3s ease-in-out;
-        }
-        nav a:hover {
-            transform: translateY(-2px);
-        }
-        .project-card:hover, .education-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
-        }
-        .social-icon:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased">
 
-    <!-- Header -->
     <header id="header" class="glass-effect fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold tracking-tight text-white">
@@ -50,43 +20,42 @@
             </a>
             <nav class="hidden md:flex space-x-8">
                 <a href="#about" class="text-slate-300 hover:text-sky-400">About</a>
-                <a href="#experience" class="text-slate-300 hover:text-sky-400">Experience</a>
                 <a href="#education" class="text-slate-300 hover:text-sky-400">Education</a>
+                <a href="#experience" class="text-slate-300 hover:text-sky-400">Experience</a>
                 <a href="#projects" class="text-slate-300 hover:text-sky-400">Projects</a>
                 <a href="#skills" class="text-slate-300 hover:text-sky-400">Skills</a>
+                <a href="#certifications" class="text-slate-300 hover:text-sky-400">Certifications</a>
                 <a href="#contact" class="text-slate-300 hover:text-sky-400">Contact</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-slate-300">
                 <i data-lucide="menu"></i>
             </button>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#about" class="block py-2 text-slate-300 hover:text-sky-400">About</a>
-            <a href="#experience" class="block py-2 text-slate-300 hover:text-sky-400">Experience</a>
             <a href="#education" class="block py-2 text-slate-300 hover:text-sky-400">Education</a>
+            <a href="#experience" class="block py-2 text-slate-300 hover:text-sky-400">Experience</a>
             <a href="#projects" class="block py-2 text-slate-300 hover:text-sky-400">Projects</a>
             <a href="#skills" class="block py-2 text-slate-300 hover:text-sky-400">Skills</a>
+            <a href="#certifications" class="block py-2 text-slate-300 hover:text-sky-400">Certifications</a>
             <a href="#contact" class="block py-2 text-slate-300 hover:text-sky-400">Contact</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="min-h-screen flex items-center pt-24 md:pt-0">
             <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
+                <div class="max-w-4xl mx-auto text-center" data-scroll="reveal-up">
                     <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
                         Hi, I'm <span class="text-sky-400">Rafikunnabi Piash</span>
                     </h1>
-
-                    <p class="text-xl md:text-2xl text-slate-400 mb-8">
+                    <p class="text-xl md:text-2xl text-slate-400 mb-8" style="transition-delay: 150ms;" data-scroll="reveal-up">
                         Frontend Developer & UI/UX Enthusiast
                     </p>
-                    <p class="max-w-2xl mx-auto text-slate-300 mb-12">
+                    <p class="max-w-2xl mx-auto text-slate-300 mb-12" style="transition-delay: 300ms;" data-scroll="reveal-up">
                         I'm a passionate Computer Science graduate focused on creating responsive, user-friendly web applications and intuitive digital experiences.
                     </p>
-                    <div class="flex justify-center gap-4 flex-wrap">
+                    <div class="flex justify-center gap-4 flex-wrap" style="transition-delay: 450ms;" data-scroll="reveal-up">
                         <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
                             View My Work
                         </a>
@@ -98,15 +67,14 @@
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
-                <h2 class="section-heading">About Me</h2>
+                <h2 class="section-heading" data-scroll="reveal-up">About Me</h2>
                 <div class="grid md:grid-cols-5 gap-12 items-center">
-                    <div class="md:col-span-2">
+                    <div class="md:col-span-2" data-scroll="reveal-left">
                          <img src="Untitled design (3).png" alt="Rafikunnabi Piash" class="rounded-full border-4 border-slate-700 shadow-lg mx-auto hover:border-sky-400 transition-colors duration-300">
                     </div>
-                    <div class="md:col-span-3">
+                    <div class="md:col-span-3" data-scroll="reveal-right">
                         <p class="text-slate-300 mb-6 text-lg">
                             I am a motivated and detail-oriented Computer Science graduate with a strong foundation in frontend development, networking, and IT support. My passion lies at the intersection of technology and design, where I enjoy crafting beautiful, functional, and responsive web applications.
                         </p>
@@ -119,11 +87,6 @@
                             <span class="bg-slate-800 text-sky-300 text-sm font-medium px-4 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 cursor-default">Team Player</span>
                             <span class="bg-slate-800 text-sky-300 text-sm font-medium px-4 py-2 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 cursor-default">Time Management</span>
                         </div>
-                        <!-- 
-                            Download Resume Button 
-                            IMPORTANT: For the download to work, place your resume file named 
-                            "Rafikunnabi Professional resume 2.0.pdf" in the same folder as this HTML file.
-                        -->
                         <a href="./Rafikunnabi Professional resume 2.0.pdf" download="Rafikunnabi_ATS_cv_with_referrence_2_0.pdf" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-full transition-transform transform hover:scale-105 inline-flex items-center gap-2">
                             <i data-lucide="download" class="w-5 h-5"></i>
                             Download Resume
@@ -133,71 +96,22 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="py-20 md:py-32 bg-slate-900/50">
-            <div class="container mx-auto px-6">
-                <h2 class="section-heading">Work Experience</h2>
-                <div class="relative max-w-3xl mx-auto">
-                    <!-- The vertical line for desktop view -->
-                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-700"></div>
-                    
-                    <!-- Experience Item 1 -->
-                    <div class="mb-12 md:flex items-center w-full">
-                        <div class="md:w-1/2 md:pr-8 md:text-right">
-                            <p class="text-slate-400">2024 - 2025</p>
-                            <h3 class="text-xl font-bold text-white mt-1">Campus Ambassador</h3>
-                            <p class="text-slate-300">Programming Hero</p>
-                        </div>
-                        <div class="w-12 h-12 rounded-full bg-sky-500 border-4 border-slate-800 flex-shrink-0 z-10 flex items-center justify-center my-4 md:my-0 mx-auto md:mx-0 hover:scale-110 transition-transform">
-                           <i data-lucide="megaphone" class="text-white"></i>
-                        </div>
-                        <div class="md:w-1/2 md:pl-8">
-                            <ul class="list-disc list-inside text-slate-400 space-y-2 text-center md:text-left">
-                                <li>Increased brand awareness via events and social media.</li>
-                                <li>Organized workshops to boost student coding engagement.</li>
-                                <li>Successfully planned and hosted hackathons.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Experience Item 2 -->
-                    <div class="mb-12 md:flex md:flex-row-reverse items-center w-full">
-                        <div class="md:w-1/2 md:pl-8 md:text-left">
-                            <p class="text-slate-400">2021 - Present</p>
-                            <h3 class="text-xl font-bold text-white mt-1">Private Tutor</h3>
-                            <p class="text-slate-300">Self-Employed</p>
-                        </div>
-                         <div class="w-12 h-12 rounded-full bg-sky-500 border-4 border-slate-800 flex-shrink-0 z-10 flex items-center justify-center my-4 md:my-0 mx-auto md:mx-0 hover:scale-110 transition-transform">
-                           <i data-lucide="book-user" class="text-white"></i>
-                        </div>
-                        <div class="md:w-1/2 md:pr-8">
-                             <ul class="list-disc list-inside text-slate-400 space-y-2 text-center md:text-right">
-                                <li>Provided one-on-one tutoring for various subjects.</li>
-                                <li>Created personalized lesson plans.</li>
-                                <li>Developed strong communication and time management.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Education Section -->
         <section id="education" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
-                <h2 class="section-heading">Education</h2>
-                <div class="grid md:grid-cols-3 gap-8">
+                <h2 class="section-heading" data-scroll="reveal-up">Education</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Education Card 1 -->
-                    <div class="education-card glass-effect p-8 rounded-xl text-center">
+                    <div class="education-card glass-effect p-8 rounded-xl text-center" data-scroll="reveal-up">
                         <div class="flex justify-center mb-4">
                             <i data-lucide="graduation-cap" class="w-12 h-12 text-sky-400"></i>
                         </div>
                         <h3 class="text-xl font-bold text-white mb-2">Bachelor of Computer Science & Engineering</h3>
                         <p class="text-slate-300 mb-1">City University</p>
-                        <p class="text-slate-400 text-sm">Passing Year: 2025 | CGPA: 3.00</p>
+                        <p class="text-slate-400 text-sm">Passing Year: 2026 | CGPA: 3.00(current)</p>
                     </div>
                     <!-- Education Card 2 -->
-                    <div class="education-card glass-effect p-8 rounded-xl text-center">
+                    <div class="education-card glass-effect p-8 rounded-xl text-center" data-scroll="reveal-up" style="transition-delay: 150ms;">
                         <div class="flex justify-center mb-4">
                             <i data-lucide="book-marked" class="w-12 h-12 text-sky-400"></i>
                         </div>
@@ -206,7 +120,7 @@
                         <p class="text-slate-400 text-sm">Passing Year: 2020 | Result: 4.92</p>
                     </div>
                     <!-- Education Card 3 -->
-                    <div class="education-card glass-effect p-8 rounded-xl text-center">
+                    <div class="education-card glass-effect p-8 rounded-xl text-center" data-scroll="reveal-up" style="transition-delay: 300ms;">
                         <div class="flex justify-center mb-4">
                             <i data-lucide="book" class="w-12 h-12 text-sky-400"></i>
                         </div>
@@ -218,163 +132,275 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-20 md:py-32 bg-slate-900/50">
+        <section id="experience" class="py-20 md:py-32 bg-slate-900/50">
             <div class="container mx-auto px-6">
-                <h2 class="section-heading">My Projects</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Project Card 1 -->
-                    <div class="project-card glass-effect rounded-2xl overflow-hidden shadow-2xl flex flex-col">
-                        <div class="relative h-48">
-                            <img src="nextgen.jpg" alt="NextGenCV Project" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
-                                <h3 class="text-2xl font-bold text-white text-center p-4">NextGenCV - Online CV Maker</h3>
-                            </div>
+                <h2 class="section-heading" data-scroll="reveal-up">Work Experience</h2>
+                <div class="relative max-w-3xl mx-auto">
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-700"></div>
+                    
+                    <div class="mb-12 md:flex items-center w-full" data-scroll="reveal-up">
+                        <div class="md:w-1/2 md:pr-8 md:text-right" data-scroll="reveal-left">
+                            <p class="text-slate-400">2024 - 2025</p>
+                            <h3 class="text-xl font-bold text-white mt-1">Campus Ambassador</h3>
+                            <p class="text-slate-300">Programming Hero</p>
                         </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <p class="text-slate-400 mb-4 flex-grow">An innovative online CV maker with customizable templates and industry-focused tips to help professionals create standout resumes effortlessly.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">UI/UX</span>
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Web App</span>
-                            </div>
-                            <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto">
-                                View Project (Soon) <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                            </a>
+                        <div class="w-12 h-12 rounded-full bg-sky-500 border-4 border-slate-800 flex-shrink-0 z-10 flex items-center justify-center my-4 md:my-0 mx-auto md:mx-0 hover:scale-110 transition-transform">
+                           <i data-lucide="megaphone" class="text-white"></i>
                         </div>
-                    </div>
-                    <!-- Project Card 2 -->
-                    <div class="project-card glass-effect rounded-2xl overflow-hidden shadow-2xl flex flex-col">
-                         <div class="relative h-48">
-                            <img src="x ride.jpg" alt="X-RIDE UI Project" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
-                                <h3 class="text-2xl font-bold text-white text-center p-4">X-RIDE - Ride-Sharing App UI</h3>
-                            </div>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <p class="text-slate-400 mb-4 flex-grow">A UI/UX design project for a ride-sharing app, focused on seamless navigation and a sleek, user-friendly interface to enhance the ride experience.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">UI/UX Design</span>
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Mobile App</span>
-                            </div>
-                            <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto">
-                                View Project (Soon) <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                            </a>
+                        <div class="md:w-1/2 md:pl-8" data-scroll="reveal-right">
+                            <ul class="list-disc list-inside text-slate-400 space-y-2 text-center md:text-left">
+                                <li>Increased brand awareness via events and social media.</li>
+                                <li>Organized workshops to boost student coding engagement.</li>
+                                <li>Successfully planned and hosted hackathons.</li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- Project Card 3 -->
-                    <div class="project-card glass-effect rounded-2xl overflow-hidden shadow-2xl flex flex-col">
-                        <div class="relative h-48">
-                            <img src="ai trip.jpg" alt="AI Trip Planner Project" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
-                                <h3 class="text-2xl font-bold text-white text-center p-4">AI Trip Planner for Bangladesh</h3>
-                            </div>
+
+                    <div class="mb-12 md:flex md:flex-row-reverse items-center w-full" data-scroll="reveal-up">
+                        <div class="md:w-1/2 md:pl-8 md:text-left" data-scroll="reveal-right">
+                            <p class="text-slate-400">2021 - Present</p>
+                            <h3 class="text-xl font-bold text-white mt-1">Private Tutor</h3>
+                            <p class="text-slate-300">Self-Employed</p>
                         </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <p class="text-slate-400 mb-4 flex-grow">An AI-powered trip planner that generates full itineraries for any of the 64 districts in Bangladesh using voice or text input.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">AI</span>
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Web App</span>
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Voice Input</span>
-                            </div>
-                             <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto">
-                                View Project (Soon) <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                            </a>
+                         <div class="w-12 h-12 rounded-full bg-sky-500 border-4 border-slate-800 flex-shrink-0 z-10 flex items-center justify-center my-4 md:my-0 mx-auto md:mx-0 hover:scale-110 transition-transform">
+                           <i data-lucide="book-user" class="text-white"></i>
                         </div>
-                    </div>
-                    <!-- Project Card 4 -->
-                    <div class="project-card glass-effect rounded-2xl overflow-hidden shadow-2xl flex flex-col">
-                        <div class="relative h-48">
-                            <img src="quintra.jpg" alt="Qintra E-commerce Project" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
-                                <h3 class="text-2xl font-bold text-white text-center p-4">Qintra - E-commerce UI Design</h3>
-                            </div>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <p class="text-slate-400 mb-4 flex-grow">A sleek, modern e-commerce website UI for a top-brand shoe store, designed to enhance user engagement and provide a seamless shopping experience.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">UI/UX Design</span>
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">E-commerce</span>
-                            </div>
-                             <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto">
-                                View Project (Soon) <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                            </a>
-                        </div>
-                    </div>
-                     <!-- Project Card 5 -->
-                    <div class="project-card glass-effect rounded-2xl overflow-hidden shadow-2xl flex flex-col">
-                        <div class="relative h-48">
-                            <img src="aggrifarm.png" alt="Online Farmer's Market Project" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
-                                <h3 class="text-2xl font-bold text-white text-center p-4">Online Farmer's Market & Bidding System</h3>
-                            </div>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <p class="text-slate-400 mb-4 flex-grow">A web and mobile platform for farmers and buyers to trade products through real-time bidding. Served as Team Lead & UI/UX Designer.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">HTML/CSS</span>
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Laravel</span>
-                                <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Vue.js</span>
-                            </div>
-                             <a href="#" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto">
-                                View Project (Soon) <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-                            </a>
+                        <div class="md:w-1/2 md:pr-8" data-scroll="reveal-left">
+                             <ul class="list-disc list-inside text-slate-400 space-y-2 text-center md:text-right">
+                                <li>Provided one-on-one tutoring for various subjects.</li>
+                                <li>Created personalized lesson plans.</li>
+                                <li>Developed strong communication and time management.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-         <!-- Skills & Certifications Section -->
-        <section id="skills" class="py-20 md:py-32">
+
+        <section id="projects" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
-                <h2 class="section-heading">Skills & Development</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Technical Skills Card -->
-                    <div class="project-card glass-effect rounded-2xl p-6 md:p-8">
-                        <h3 class="text-2xl font-bold text-white mb-8 text-center">Technical Skills</h3>
-                        <div class="grid grid-cols-2 gap-4 text-center">
-                            <div class="skill-item">Web Technologies</div>
-                            <div class="skill-item">Frontend Developing</div>
-                            <div class="skill-item">UI/UX Designing</div>
-                            <div class="skill-item">Database Management</div>
-                            <div class="skill-item">Software & Frameworks</div>
-                            <div class="skill-item">Networking Basics</div>
-                            <div class="skill-item">Operating Systems</div>
-                            <div class="skill-item">Hardware Knowledge</div>
+                <h2 class="section-heading" data-scroll="reveal-up">My Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project 1 -->
+                    <div class="project-card-container" data-scroll="reveal-up">
+                        <div class="glass-effect rounded-2xl overflow-hidden shadow-2xl project-card h-full flex flex-col">
+                            <div class="relative">
+                                <div class="slider-container">
+                                    <img src="Screenshot 2025-05-22 121015.png" alt="Project Image 1" class="slider-image active">
+                                    <img src="sign up.png" alt="Project Image 2" class="slider-image">
+                                    <img src="sign in.png" alt="Project Image 3" class="slider-image">
+                                </div>
+                                <button class="slider-btn prev"><i data-lucide="chevron-left"></i></button>
+                                <button class="slider-btn next"><i data-lucide="chevron-right"></i></button>
+                            </div>
+                            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-white mb-3">Online Farmer's Market & bidding System</h3>
+                                <p class="text-slate-400 mb-6 flex-grow text-sm">A web and mobile platform connecting farmers and buyers via a real-time bidding system. Served as Team Lead and primary UI/UX Designer.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Laravel</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Vue.js</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">MySQL</span>
+                                </div>
+                                 <a href="https://agrifram.page.gd/" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto text-sm">
+                                    View Project <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <!-- Certifications Card -->
-                    <div class="project-card glass-effect rounded-2xl p-6 md:p-8">
-                        <h3 class="text-2xl font-bold text-white mb-8 text-center">Certifications</h3>
-                        <div class="space-y-4">
-                            <div class="cert-item">
-                                <i data-lucide="award" class="cert-icon"></i>
-                                <div>
-                                    <p class="font-semibold text-white">Full Stack Development with MERN</p>
-                                    <p class="text-sm text-slate-400">Grameenphone Academy</p>
+
+                    <!-- Project 2 -->
+                    <div class="project-card-container" data-scroll="reveal-up">
+                        <div class="glass-effect rounded-2xl overflow-hidden shadow-2xl project-card h-full flex flex-col">
+                            <div class="relative">
+                                <div class="slider-container">
+                                    <img src="Screenshot_90.png" alt="Project Image 1" class="slider-image active">
+                                    <img src="Screenshot_91.png" alt="Project Image 2" class="slider-image">
+                                    <img src="Screenshot_92.png" alt="Project Image 3" class="slider-image">
                                 </div>
+                                <button class="slider-btn prev"><i data-lucide="chevron-left"></i></button>
+                                <button class="slider-btn next"><i data-lucide="chevron-right"></i></button>
                             </div>
-                            <div class="cert-item">
-                                <i data-lucide="award" class="cert-icon"></i>
-                                <div>
-                                    <p class="font-semibold text-white">Career Essentials in Data Analysis</p>
-                                    <p class="text-sm text-slate-400">Microsoft & LinkedIn</p>
+                            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-white mb-3">AI Trip Planner</h3>
+                                <p class="text-slate-400 mb-6 flex-grow text-sm">Developed a dynamic, single-page application for creating personalized travel itineraries. Utilized
+the Gemini API to generate custom, day-by-day travel plans based on user input for destination, duration, and
+interests.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">HTML5</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Tailwindcss</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Gemini API</span>
                                 </div>
+                                 <a href="https://rafikunnabi-piash.github.io/AI-Trip-Planner/" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto text-sm">
+                                    View Project <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                </a>
                             </div>
-                            <div class="cert-item">
-                                <i data-lucide="award" class="cert-icon"></i>
-                                <div>
-                                    <p class="font-semibold text-white">UI/UX Design for Beginners</p>
-                                    <p class="text-sm text-slate-400">Great Learning</p>
+                        </div>
+                    </div>
+
+                     <!-- Project 3 -->
+                    <div class="project-card-container" data-scroll="reveal-up">
+                        <div class="glass-effect rounded-2xl overflow-hidden shadow-2xl project-card h-full flex flex-col">
+                            <div class="relative">
+                                <div class="slider-container">
+                                    <img src="Screenshot_97.png" alt="Project Image 1" class="slider-image active">
+                                    <img src="Screenshot_96.png" alt="Project Image 2" class="slider-image">
+                                   
                                 </div>
+                                <button class="slider-btn prev"><i data-lucide="chevron-left"></i></button>
+                                <button class="slider-btn next"><i data-lucide="chevron-right"></i></button>
                             </div>
-                             <div class="cert-item">
-                                <i data-lucide="award" class="cert-icon"></i>
-                                <div>
-                                    <p class="font-semibold text-white">Graphic Design</p>
-                                    <p class="text-sm text-slate-400">Pentanik IT Solution Park</p>
+                            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-white mb-3">Personal Portfolio Website</h3>
+                                <p class="text-slate-400 mb-6 flex-grow text-sm">A fully responsive and animated personal portfolio built from scratch to showcase my skills and projects.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">HTML5</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Tailwind CSS</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
                                 </div>
+                                 <a href="https://rafikunnabi-piash.github.io/Portfolio/" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto text-sm">
+                                    View Project <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                </a>
                             </div>
+                        </div>
+                    </div>
+
+                     <!-- Project 4 -->
+                    <div class="project-card-container" data-scroll="reveal-up">
+                        <div class="glass-effect rounded-2xl overflow-hidden shadow-2xl project-card h-full flex flex-col">
+                            <div class="relative">
+                                <div class="slider-container">
+                                    <img src="Screenshot_88.png" alt="Project Image 1" class="slider-image active">
+                                    <img src="Screenshot_89.png" alt="Project Image 2" class="slider-image">
+                                </div>
+                                <button class="slider-btn prev"><i data-lucide="chevron-left"></i></button>
+                                <button class="slider-btn next"><i data-lucide="chevron-right"></i></button>
+                            </div>
+                            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-white mb-3">NightFlix-Movie Server</h3>
+                                <p class="text-slate-400 mb-6 flex-grow text-sm">HTML, CSS, Tailwind CSS, JavaScript Designed and developed a modern
+UI movie server website for browsing and streaming movie content. Built a responsive front-end interface using
+Tailwind CSS, ensuring seamless viewing across devices</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">HTML 5</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Frontend Design</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">CSS</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
+                                </div>
+                                 <a href="https://rafikunnabi-piash.github.io/NightFlix-movie_server/" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto text-sm">
+                                    View Project <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="project-card-container" data-scroll="reveal-up">
+                        <div class="glass-effect rounded-2xl overflow-hidden shadow-2xl project-card h-full flex flex-col">
+                            <div class="relative">
+                                <div class="slider-container">
+                                    <img src="Screenshot_95.png" alt="Project Image 1" class="slider-image active">
+                                   
+                                </div>
+                                <button class="slider-btn prev"><i data-lucide="chevron-left"></i></button>
+                                <button class="slider-btn next"><i data-lucide="chevron-right"></i></button>
+                            </div>
+                            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-white mb-3">Real-Time Weather Dashboard</h3>
+                                <p class="text-slate-400 mb-6 flex-grow text-sm">A sleek, simple weather application that fetches real-time weather data from a third-party API based on user's location or searched city.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">HTML</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">REST API</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">CSS Grid</span>
+                                </div>
+                                 <a href="https://rafikunnabi-piash.github.io/Real-Time-Weather-Dashboard/" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto text-sm">
+                                    View Project <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card-container" data-scroll="reveal-up">
+                        <div class="glass-effect rounded-2xl overflow-hidden shadow-2xl project-card h-full flex flex-col">
+                            <div class="relative">
+                                <div class="slider-container">
+                                    <img src="x ride.jpg" alt="Project Image 1" class="slider-image active">
+                                    
+                                </div>
+                                <button class="slider-btn prev"><i data-lucide="chevron-left"></i></button>
+                                <button class="slider-btn next"><i data-lucide="chevron-right"></i></button>
+                            </div>
+                            <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-white mb-3">X-RIDE Mobile APP UI Design</h3>
+                                <p class="text-slate-400 mb-6 flex-grow text-sm">X-RIDE, A ride share platform. Share Ride with cost efficient</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Figma</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">UI/UX</span>
+                                    <span class="bg-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">Branding</span>
+                                </div>
+                                 <a href="https://www.behance.net/gallery/209894315/Ride-Share-App-UI-Design" class="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold group mt-auto text-sm">
+                                    View Project <i data-lucide="arrow-right" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 md:py-32 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-heading" data-scroll="reveal-up">Technical Skills</h2>
+                <div class="max-w-4xl mx-auto" data-scroll="reveal-up">
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-slate-300">
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>Web Technologies</li>
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>Frontend Developing</li>
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>UI/UX Designing</li>
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>Database Management</li>
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>Software & Frameworks</li>
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>Networking Basics</li>
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>Operating Systems</li>
+                       <li class="flex items-center gap-3 p-4 glass-effect rounded-lg transition-transform hover:scale-105"><i data-lucide="check-circle" class="w-5 h-5 text-sky-400 flex-shrink-0"></i>Hardware Knowledge</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="section-heading" data-scroll="reveal-up">Certifications</h2>
+                <div class="max-w-2xl mx-auto space-y-4" data-scroll="reveal-up">
+                    <div class="cert-item">
+                        <i data-lucide="award" class="cert-icon"></i>
+                        <div>
+                            <p class="font-semibold text-white">Full Stack Development with MERN</p>
+                            <p class="text-sm text-slate-400">Grameenphone Academy</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i data-lucide="award" class="cert-icon"></i>
+                        <div>
+                            <p class="font-semibold text-white">Career Essentials in Data Analysis</p>
+                            <p class="text-sm text-slate-400">Microsoft & LinkedIn</p>
+                        </div>
+                    </div>
+                     <div class="cert-item">
+                        <i data-lucide="award" class="cert-icon"></i>
+                        <div>
+                            <p class="font-semibold text-white">UI/UX Design for Beginners</p>
+                            <p class="text-sm text-slate-400">Great Learning</p>
+                        </div>
+                    </div>
+                     <div class="cert-item">
+                        <i data-lucide="award" class="cert-icon"></i>
+                        <div>
+                            <p class="font-semibold text-white">Graphic Design</p>
+                            <p class="text-sm text-slate-400">Pentanik IT Solution Park</p>
                         </div>
                     </div>
                 </div>
@@ -382,14 +408,12 @@
         </section>
         
         <style>
-            .skill-item { @apply bg-slate-800 text-slate-300 font-medium py-3 px-5 rounded-lg text-center transition-all duration-300 hover:bg-sky-500 hover:text-white transform hover:-translate-y-1; }
             .cert-item { @apply flex items-center gap-4 p-4 rounded-lg glass-effect transition-all duration-300 hover:border-sky-400 hover:scale-105; }
             .cert-icon { @apply w-8 h-8 text-sky-400 flex-shrink-0; }
         </style>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 md:py-32 bg-slate-900/50">
-            <div class="container mx-auto px-6 text-center">
+        <section id="contact" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center" data-scroll="reveal-up">
                 <h2 class="section-heading">Get In Touch</h2>
                 <p class="max-w-2xl mx-auto text-slate-400 mb-12">
                     I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind, want to connect, or just want to say hi!
@@ -417,45 +441,98 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-slate-900/50 border-t border-slate-800">
-        <div class="container mx-auto px-6 py-6 text-center text-slate-500">
-            <p>&copy; 2025 Rafikunnabi Piash. All Rights Reserved.</p>
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col items-center text-center sm:flex-row sm:justify-between sm:text-left">
+                <p class="text-sm text-slate-500">&copy; 2025 Rafikunnabi Piash. All Rights Reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4 sm:mt-0">
+                    <a href="https://www.facebook.com/rfknbi.piash/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-400 social-icon">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/rafikunnabi-piash-86a603178/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-400 social-icon">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://github.com/Rafikunnabi-Piash" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-400 social-icon">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+                    <a href="tel:+8801518387869" class="text-slate-400 hover:text-sky-400 social-icon">
+                        <i data-lucide="phone" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu when a link is clicked
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
 
-        // Header scroll effect
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('py-2');
-                header.classList.remove('py-4');
-            } else {
-                header.classList.add('py-4');
-                header.classList.remove('py-2');
-            }
+            header.classList.toggle('py-2', window.scrollY > 50);
+            header.classList.toggle('py-4', window.scrollY <= 50);
         });
+
+        const scrollElements = document.querySelectorAll("[data-scroll]");
+        const elementInView = (el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return elementTop <= (window.innerHeight || document.documentElement.clientHeight) - 50;
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el)) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+        
+        scrollElements.forEach(el => el.classList.add(el.dataset.scroll));
+        window.addEventListener("scroll", handleScrollAnimation);
+        handleScrollAnimation();
+
+        // --- Project Slider Script ---
+        document.querySelectorAll('.project-card-container').forEach(project => {
+            const slider = project.querySelector('.slider-container');
+            const images = slider.querySelectorAll('.slider-image');
+            const prevBtn = project.querySelector('.slider-btn.prev');
+            const nextBtn = project.querySelector('.slider-btn.next');
+            let currentIndex = 0;
+
+            function showImage(index) {
+                images.forEach((img, i) => {
+                    img.classList.toggle('active', i === index);
+                });
+            }
+
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                showImage(currentIndex);
+            });
+
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                showImage(currentIndex);
+            });
+
+            // Initialize first image
+            showImage(currentIndex);
+        });
+
     </script>
 </body>
 </html>
-
-
 
